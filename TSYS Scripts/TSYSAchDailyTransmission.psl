@@ -1,0 +1,25 @@
+#
+# This script file was recorded automatically.
+#
+set comm-type telnet
+set telnet-port 1023d
+set host-name <TSYS_HOST_IP>
+ok = [session open]
+if {$ok == 0} {return}
+wait record
+send "tsys<enter>"
+wait record
+send "<REDACTED_PASSWORD><enter>"
+wait record
+send "help desk pps<tab>"
+send "<REDACTED_PASSWORD><enter>"
+wait record
+send "mas<enter>"
+wait record
+send "iac"
+send "<REDACTED_PIN><enter>"
+wait record
+send <clear-screen>
+wait record
+send <clear-screen>
+wait record

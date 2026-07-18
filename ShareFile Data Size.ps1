@@ -25,7 +25,7 @@
     Ignore the cached folder total and instead walk the tree, summing file sizes.
 
 .EXAMPLE
-    .\Get-ShareFileFolderSize.ps1 -Subdomain prth -FolderPath "/Shared Folders/Migration Source"
+    .\Get-ShareFileFolderSize.ps1 -Subdomain yourcompany -FolderPath "/Shared Folders/Migration Source"
 
 .NOTES
     SECURITY: Client ID and Secret are hardcoded below in plaintext. Anyone who can read this

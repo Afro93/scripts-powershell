@@ -61,10 +61,10 @@ Write-Log "DRY RUN = $DryRun"
 Write-Log "------------------------------------------------------------"
 
 foreach ($row in $rows) {
-    $email  = ($row."Priority Email" -replace "\s", "").ToLower()
+    $email  = ($row."Work Email" -replace "\s", "").ToLower()
     $status = ($row."Position Status").ToString().Trim()
 
-    # Skip blank or non-prth emails
+    # Skip blank or non-company emails
     if (-not $email -or -not $email.EndsWith("@example.com")) {
         Write-Log "SKIPPED   -- No valid @example.com email (found: '$email')"
         $skipped++

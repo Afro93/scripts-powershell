@@ -1,0 +1,16 @@
+# Secrets & environment
+.env
+.env.*
+*.key
+*.pem
+*secret*
+*token*.txt
+
+# Logs & data
+*.log
+*.csv
+*.json
+
+# OS cruft
+.DS_Store
+Thumbs.db
